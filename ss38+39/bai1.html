@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            font-size: 25px;
+            color: #9a9a9a;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+        }
+
+        .step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 5px solid #dcdcdc;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .step:first-child {
+            border-color: #308bcf;
+        }
+
+        .line {
+            width: 90px;
+            height: 5px;
+            background-color: #dcdcdc;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: #dcdcdc;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="step">1</div>
+        <div class="line"></div>
+        <div class="step">2</div>
+        <div class="line"></div>
+        <div class="step">3</div>
+        <div class="line"></div>
+        <div class="step">4</div>
+    </div>
+    <div>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+
+
+    <script src="./bai1.js"></script>
+</body>
+</html>
